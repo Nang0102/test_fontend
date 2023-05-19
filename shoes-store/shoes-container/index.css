@@ -1,0 +1,883 @@
+* {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+.lg {
+  font-size: 42px;
+}
+
+.header-bg {
+  width: 100%;
+  height: 680px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.5),
+      rgba(26, 26, 26, 0.5)
+    ),
+    url("../image/Rectangle 4.png");
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.title-header-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  position: absolute;
+  height: 15%;
+  left: 55%;
+  top: 25%;
+  color: white;
+}
+.w {
+  width: 85%;
+}
+.title {
+  font-family: "Koulen";
+  font-size: 56px;
+  line-height: 150%;
+}
+.content-header-bg {
+  width: 100%;
+  height: 15%;
+  font-size: 20px;
+  line-height: 150%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.sale-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 120px;
+  gap: 32px;
+  background: #1a1a1a;
+  color: #ffff;
+
+  position: absolute;
+  left: 31%;
+  top: 76%;
+}
+
+.title-sale {
+  font-family: "Koulen";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 42px;
+}
+
+.content-sale {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.time-content {
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.text-content {
+  font-size: 24px;
+  line-height: 150%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-bg {
+    width: 100%;
+    height: 512px;
+  }
+
+  .w {
+    width: 100%;
+  }
+
+  .content-header-bg {
+    width: 100%;
+  }
+  .title-header-bg {
+    left: 15px;
+    height: 100%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .time-content {
+    font-size: 48px;
+  }
+  .title-sale {
+    font-size: 32px;
+  }
+  .content-sale {
+    gap: 16px;
+  }
+  /* .sale-container {
+    gap: 16px;
+    width: 85%;
+    height: 35%;
+    left: 5%;
+    top: 85%;
+  }  */
+  .sale-container {
+    gap: 16px;
+    padding: 0;
+    width: 342px;
+    height: 292px;
+    left: 20px;
+    top: 462px;
+  }
+}
+
+.pa {
+  padding: 80px 135px;
+}
+.shoes-ma {
+  margin-top: 180px;
+}
+.shoes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-title {
+  font-family: "Koulen";
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.header-content {
+  width: 55%;
+  font-size: 16px;
+  line-height: 150%;
+  order: 1;
+}
+
+/* Shoes-----item */
+.shoe-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.couple-item {
+  display: flex;
+  gap: 30px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+.shoes-item-1 {
+  background-image: url("../image/shoes/shoe-3.png");
+}
+.shoes-item-2 {
+  background-image: url("../image/shoes/shoe-4.png");
+}
+.shoes-item-3 {
+  background-image: url("../image/shoes/shoe-1.png");
+}
+.shoes-item-4 {
+  background-image: url("../image/shoes/shoe-2.png");
+}
+
+.shoe-detail-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  padding: 0px;
+  /* gap: 24px; */
+  isolation: isolate;
+  width: 270px;
+  height: 324px;
+}
+.w-s {
+  width: 270px;
+  height: 260px;
+}
+.sale-off {
+  font-size: 14px;
+  color: #ffffff;
+  background: #3d0000;
+  padding: 4px;
+}
+
+.shoe-detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 270px;
+}
+.shoe-detail-info-i {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.shoe-detail-price {
+  display: flex;
+  font-size: 20px;
+  line-height: 150%;
+  gap: 8px;
+  color: #1a1a1a;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.shoe-detail-price-sale-off {
+  align-self: center;
+  text-decoration: line-through;
+}
+
+.shoe-detail-name {
+  font-size: 14px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.shoe-detail-desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a1a1a;
+}
+
+.add-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+
+  width: 270px;
+  height: 48px;
+  background-color: white;
+  border: 1px solid #1a1a1a;
+}
+@media only screen and (max-width: 600px) {
+  .shoes-ma {
+    margin-top: 240px;
+  }
+  .pa {
+    padding: 80px 15px;
+  }
+  .shoes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+  }
+  .header-title {
+    font-size: 32px;
+    width: 100%;
+  }
+  .header-content {
+    font-size: 16px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .shoe-detail-container {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 15px;
+  }
+  .couple-item {
+    gap: 15px;
+  }
+
+  .item {
+    gap: 24px;
+  }
+
+  .shoe-detail-info {
+    gap: 16px;
+    width: 173px;
+  }
+  .shoe-detail-info-i {
+    gap: 16px;
+  }
+  .shoe-detail-image {
+    width: 173px;
+    height: 208px;
+  }
+
+  .shoes-item-1 {
+    background-image: url("../image/shoes/shoe-mb1.png");
+  }
+  .shoes-item-2 {
+    background-image: url("../image/shoes/shoe-mb2.png");
+  }
+  .shoes-item-3 {
+    background-image: url("../image/shoes/shoe-mb3.png");
+  }
+  .shoes-item-4 {
+    background-image: url("../image/shoes/shoe-mb4.png");
+  }
+
+  .add-card {
+    margin-top: 16px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .sale-off {
+    margin-top: 10px;
+  }
+}
+
+/* Craft------- */
+
+.craft-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 135px;
+  gap: 80px;
+  background: #1a1a1a;
+  color: white;
+}
+
+.craft-content {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+}
+.craft-content-f {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.craft-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.img-res {
+  width: 570px;
+  height: 557px;
+}
+
+.craft-detail-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.craft-detail-time {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #dedd91;
+}
+
+@media only screen and (max-width: 600px) {
+  .craft-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 15px;
+    gap: 40px;
+    left: 0px;
+  }
+
+  .craft-content-f {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-res {
+    /* width: 100%; */
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* ////// cambridge-shoe */
+
+.cambridge-shoe {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 120px 135px;
+  gap: 30px;
+}
+
+.cambridge-shoe-image {
+  display: flex;
+  gap: 15px;
+  width: 670px;
+  height: 677px;
+}
+
+.cambridge-shoe-image-small {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.cambridge-shoe-image-small-detail {
+  padding: 20px;
+  /* width: 90px;
+  height: 108px; */
+}
+#large-image {
+  width: 440px;
+  height: 200px;
+}
+
+.cambridge-shoe-image-large {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.cambridge-shoe-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.cambridge-shoe-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.border {
+  width: 470px;
+  border: 1px solid #1a1a1a;
+}
+
+.cambridge-shoe-add-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.cambridge-shoe-add-card-change-num {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 0px;
+  gap: 8px;
+}
+.dec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #666666;
+  width: 48px;
+  height: 48px;
+}
+
+.num {
+  width: 34px;
+}
+
+.cam-btn {
+  width: 308px;
+  height: 48px;
+}
+
+.cambridge-shoe-title-sale {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cambridge-shoe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 80px 15px;
+    gap: 30px;
+  }
+
+  .cambridge-shoe-image {
+    flex-direction: column-reverse;
+
+    width: 100%;
+    height: auto;
+  }
+  .cambridge-shoe-image-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .cambridge-shoe-image-large {
+    justify-content: center;
+    align-self: flex-start;
+    width: 360px;
+    height: 432px;
+  }
+  #large-image {
+    width: 280px;
+    height: 127px;
+  }
+
+  .cambridge-shoe-info-header {
+    font-size: 32px;
+  }
+  .border {
+    width: 345px;
+    border: 1px solid #1a1a1a;
+  }
+  .lg {
+    font-size: 32px;
+  }
+  .cambridge-shoe-info-content {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .cam-btn {
+    width: 198px;
+  }
+  .center {
+    align-self: center;
+  }
+}
+
+.acessories {
+  margin-top: 30px;
+}
+
+.acs-1 {
+  width: 100%;
+  background-image: url("../image/accessories/acs-01.png");
+}
+
+.acs-2 {
+  background-image: url("../image/accessories/acs-02.png");
+}
+
+.acs-3 {
+  background-image: url("../image/accessories/ace-03.png");
+}
+
+.acs-4 {
+  background-image: url("../image/accessories/acs-04.png");
+}
+
+/* customer */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 135px;
+  gap: 80px;
+  background: #1a1a1a;
+}
+.text-white {
+  color: white;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  /* padding-top: 80px; */
+}
+
+.customer-info-user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.customer-info-user-ava {
+}
+
+.customer-info-user-feedback {
+  padding: 24px;
+  gap: 24px;
+  background: #ffffff;
+}
+.customer-info-user-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+.customer-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 45%;
+  /* text-align: center; */
+  /* padding: 0px; */
+  isolation: isolate;
+}
+.sp-dot {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 80px 15px;
+    /* height: 80%; */
+  }
+
+  .hide-none {
+    display: none;
+  }
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 120px 135px;
+  gap: 31px;
+}
+.question-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 18px;
+  /* width: 100%; */
+}
+
+.frequently-question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 50px 0px 0px;
+  gap: 40px;
+  width: 50%;
+}
+
+.frequently-question-question1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.frequently-question1-des {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.frequently-question-question1-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #1a1a1a;
+  gap: 18px;
+}
+
+.frequently-question-question1-desc {
+  display: flex;
+  padding: 16px 24px;
+  gap: 10px;
+  background: #f5f5f5;
+}
+
+/* .other-question-container {
+  width: 100%;
+} */
+
+.other-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 50px;
+  gap: 40px;
+  background: #1a1a1a;
+}
+.question-title-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.question-content {
+  width: 90%;
+  text-align: center;
+}
+.other-question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 392px;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff;
+  width: 100%;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .question {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 15px;
+    gap: 30px;
+  }
+  .question-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 18px;
+  }
+  .f {
+    font-size: 30px;
+  }
+
+  .frequently-question {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .frequently-question-question1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hide-none {
+    display: none;
+  }
+  .frequently-question-question1-input {
+    padding: 0px 16px;
+  }
+
+  .other-question {
+    padding: 80px 24px;
+  }
+
+  .question-content {
+    width: 100%;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 310px;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
